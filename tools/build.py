@@ -577,7 +577,7 @@ def build(lang, images, css):
         fav = f'<span class="fav">{laurel(16)}{t["top1"] if a["top1"] else t["fav_badge"]}</span>' if a["fav"] else ""
         scores.append(f'''<article class="score rv"><header><div><h3>{a["name"]}</h3></div><span class="big">{num(a["rating"], lang)}</span></header>
 <p class="sub">{a["reviews"]} {t["reviews_word"]} · Airbnb</p><ul class="bars">{bars}</ul>
-<div style="display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">{fav}<a href="{a["airbnb"]}#reviews" target="_blank" rel="noopener">{t["read_reviews"]}</a></div></article>''')
+<div style="display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">{fav}<a href="{a["airbnb"]}/reviews" target="_blank" rel="noopener">{t["read_reviews"]}</a></div></article>''')
     quotes = ""
     if REVIEWS:
         quotes = '<div class="quotes">' + "".join(
