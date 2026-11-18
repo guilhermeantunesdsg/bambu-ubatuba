@@ -64,7 +64,14 @@ section{scroll-margin-top:72px}
 .hero picture,.hero picture img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .hero picture img{object-position:50% 62%;animation:zoom 18s ease-out both}
 @keyframes zoom{from{transform:scale(1.08)}to{transform:scale(1)}}
-.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,44,66,.5) 0%,rgba(6,44,66,0) 22%,rgba(6,44,66,0) 38%,rgba(4,30,45,.88) 100%)}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(4,28,42,.5) 0%,rgba(4,28,42,.18) 14%,rgba(4,28,42,.5) 32%,rgba(4,28,42,.76) 55%,rgba(4,24,36,.94) 100%)}
+@media (max-aspect-ratio:1/1){
+  .hero h1{text-shadow:0 2px 18px rgba(2,18,28,.55)}
+  .hero h1 em{color:#e3f7ec}
+  .hero p.lead{opacity:1;text-shadow:0 1px 12px rgba(2,18,28,.6)}
+  .hero .eyebrow{text-shadow:0 1px 10px rgba(2,18,28,.6)}
+  .hero .chip{background:rgba(4,28,42,.45)}
+}
 @media (min-aspect-ratio:1/1){.hero::after{background:linear-gradient(180deg,rgba(6,44,66,.45) 0%,rgba(6,44,66,0) 20%),linear-gradient(90deg,rgba(4,28,42,.86) 0%,rgba(4,28,42,.6) 38%,rgba(4,28,42,0) 70%)}.hero-in{padding-bottom:88px}}
 .hero-in{position:relative;z-index:1;padding:140px 0 64px}
 .eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:.78rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase}
