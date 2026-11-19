@@ -646,8 +646,7 @@ def build(lang, images, css):
             f'<span class="ph"><span class="ph-display">{ph_screen}</span></span></a>')
     ig_sec = f'''<section class="sec ig" id="instagram"><div class="wrap ig-grid">
 <div class="ig-side rv"><div class="sec-head" style="margin-bottom:28px"><span class="eyebrow">{t["ig_eyebrow"]}</span><h2>{t["ig_h2"]}</h2><p>{t["ig_p"]}</p></div>
-<div class="ig-card"><div class="ig-prof"><span class="ig-av"><span><img src="{P}img/brand/logo-bambu.svg" width="60" height="22" alt=""></span></span><div><b>@bambu.ubatuba</b><small>{t["ig_name"]}</small><small>Praia Grande · Ubatuba – SP</small></div></div>
-<a class="btn btn-ig" href="{INSTAGRAM}" target="_blank" rel="noopener"><img src="{ig_png}" width="18" height="18" alt="">{t["ig_follow"]}</a></div></div>
+<a class="btn btn-ig" href="{INSTAGRAM}" target="_blank" rel="noopener"><img src="{ig_png}" width="18" height="18" alt="">{t["ig_follow"]}</a></div>
 {mock}
 </div></section>'''
 
