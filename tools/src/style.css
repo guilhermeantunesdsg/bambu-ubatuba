@@ -66,11 +66,11 @@ section{scroll-margin-top:72px}
 .hdr.solid .logo .logo-c{display:block}
 .ftr .logo img{height:45px}
 .nav-ig{display:inline-flex;align-items:center;gap:7px}
-.nav-ig img{width:17px;height:17px}
+.nav-ig img{width:18px;height:18px;border-radius:5px}
 .hdr-ig{display:none;width:40px;height:40px;place-items:center;border-radius:50%;transition:opacity .2s}
 .hdr-ig:hover{opacity:.8}
-.hdr-ig img{width:26px;height:26px}
-.hdr.solid .nav-ig img,.hdr.solid .hdr-ig img,.nav-open .nav-ig img{filter:brightness(0);opacity:.82}
+.hdr-ig img{width:28px;height:28px;border-radius:8px}
+
 
 /* ---------- Hero ---------- */
 .hero{position:relative;min-height:100vh;min-height:100svh;display:flex;align-items:flex-end;color:#fff;overflow:hidden;background:var(--ocean-deep)}

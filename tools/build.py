@@ -34,7 +34,7 @@ APTS = [
      "rating": 4.96, "reviews": 25, "fav": True, "top1": False, "guests": 6, "bedrooms": 2, "beds": 4, "baths": 2, "parking": 1,
      "cats": [5.0, 5.0, 5.0, 5.0, 5.0, 4.9]},
     {"key": "reserva-dna", "name": "Reserva DNA 14.4.1", "condo": "dna", "airbnb": "https://www.airbnb.com.br/rooms/913872230965185636",
-     "rating": 4.93, "reviews": 15, "fav": False, "top1": False, "guests": 6, "bedrooms": 2, "suites": True, "beds": 4, "baths": 3, "social": 1, "parking": 2,
+     "rating": 4.93, "reviews": 15, "fav": False, "top1": False, "guests": 6, "bedrooms": 2, "suites": True, "beds": 4, "baths": 2, "social": 1, "parking": 2,
      "cats": [4.9, 4.9, 4.8, 5.0, 4.6, 4.7]},
 ]
 
@@ -89,8 +89,8 @@ T = {
  "lz_eyebrow": "Lazer completo", "lz_h2": "Lazer de <em>resort</em> à beira-mar",
  "lz_p": "Os dois condomínios oferecem lazer para todas as idades, para você aproveitar Ubatuba mesmo nos dias de chuva.",
  "condos": {
-  "bambu": ("Condomínio Bambu", "Prédio novo de frente para a Praia Grande, com rooftop e piscina de borda infinita olhando para o mar. Abriga os apartamentos 202 e 410."),
-  "dna": ("Reserva DNA Resort", "Resort frente ao mar com jardins, várias piscinas, rooftop e lazer completo para a família. Abriga o apartamento 14.4.1."),
+  "bambu": ("Condomínio Bambu", "Prédio novo de frente para a Praia Grande, com rooftop e piscina de borda infinita."),
+  "dna": ("Reserva DNA Resort", "Resort frente ao mar com jardins, várias piscinas, rooftop e lazer completo para a família."),
  },
  "amen": {
   "bambu": ["Piscina de borda infinita", "Piscina infantil", "Piscina aquecida coberta", "Sauna seca e a vapor", "Academia", "Salão de jogos", "Brinquedoteca", "Guarda-volumes náutico", "Lavanderia inteligente", "Concierge", "Portaria 24h"],
@@ -111,19 +111,22 @@ T = {
  "steps": [("Escolha", "Veja as fotos e escolha o apartamento ideal para a sua viagem."), ("Chame no WhatsApp", "Envie as datas e o número de hóspedes. Respondemos rapidinho."), ("Confirme", "Combinamos valores e pagamento direto com o anfitrião. Se preferir, reserve pelo Airbnb.")],
  "loc_eyebrow": "Localização", "loc_h2": "Hospedagem na <em>Praia Grande</em>, Ubatuba",
  "loc_p": "A Praia Grande é uma das praias mais procuradas de Ubatuba e do Litoral Norte de SP: extensa, com mar para banho e surfe, quiosques, restaurantes e comércio na orla, e fácil acesso às praias vizinhas e ao Centro.",
- "open_maps": "Abrir no Maps", "loc_bambu": "Apartamentos 202 e 410 · Frente ao mar", "loc_dna": "Apartamento 14.4.1 · A ~100 m do mar",
+ "open_maps": "Abrir no Maps", "loc_bambu": "Apartamentos 202 e 410 · Frente ao mar", "loc_dna": "Apartamento 14.4.1 · À beira-mar",
  "near": ["Orla com quiosques e restaurantes", "Praias das Toninhas e Enseada por perto", "Centro de Ubatuba a poucos minutos", "Trilhas, ilhas e mais de 100 praias na região"],
  "map_title": "Mapa da Praia Grande, Ubatuba",
  "faq_eyebrow": "Dúvidas frequentes", "faq_h2": "Perguntas <em>frequentes</em>",
  "faq": [
   ("Como funciona a locação por temporada em Ubatuba?", "É só chamar no WhatsApp com as datas e o número de hóspedes. Confirmamos a disponibilidade e combinamos tudo diretamente. Se preferir, também é possível reservar pelo Airbnb."),
   ("Quantas pessoas cabem em cada apartamento?", "Até 6 hóspedes: suíte com cama queen, quarto com duas camas de solteiro e sofá-cama na sala."),
-  ("Os apartamentos ficam perto da praia?", "Sim. Os apartamentos do Condomínio Bambu ficam de frente para a Praia Grande, com vista para o mar. O Reserva DNA fica a cerca de 100 metros da areia."),
-  ("Tem ar-condicionado e Wi-Fi?", "Sim. Todos os apartamentos têm ar-condicionado em todos os quartos e Wi-Fi."),
+  ("Os apartamentos ficam perto da praia?", "Sim! Os condomínios estão localizados à beira-mar. Os apartamentos do Condomínio Bambu ficam de frente para a Praia Grande, com vista para o mar."),
+  ("Tem ar-condicionado e Wi-Fi?", "Sim. Os apartamentos são equipados com ar-condicionado nos quartos e na sala e rede Wi-Fi de alta velocidade."),
   ("Roupa de cama e toalhas estão incluídas?", "Roupa de cama, toalhas e produtos de higiene e limpeza não estão inclusos. Fale com a gente pelo WhatsApp se tiver alguma dúvida."),
   ("Tem vaga de garagem?", "Sim. Os apartamentos do Bambu têm 1 vaga e o Reserva DNA tem 2 vagas. Veículos muito grandes, como picapes Dodge RAM, não cabem."),
-  ("Posso levar meu pet?", "No Reserva DNA não são permitidos animais. Para os apartamentos do Condomínio Bambu, consulte a gente pelo WhatsApp."),
-  ("Onde ficar em Ubatuba?", "A Praia Grande é uma das melhores regiões para se hospedar em Ubatuba: fica perto do Centro, tem orla com quiosques, restaurantes e comércio, e dá acesso fácil a praias como Toninhas e Enseada. Nossos apartamentos ficam de frente para o mar ou a poucos metros dele."),
+  ("Posso levar meu pet?", "Desculpe, não aceitamos pet em nossos apartamentos."),
+  ("Onde ficar em Ubatuba?", "A Praia Grande é uma das melhores regiões para se hospedar em Ubatuba: fica perto do Centro, tem orla com quiosques, restaurantes e comércio, e dá acesso fácil a praias como Toninhas e Enseada. Os condomínios estão localizados à beira-mar."),
+  ("É fornecida alimentação ou pensão completa?", "Não. Os apartamentos ficam em condomínios, então oferecemos somente a locação por temporada, com uso de todas as áreas de lazer."),
+  ("Os apartamentos têm acessórios de praia?", "Sim. Todos os apartamentos têm acessórios de praia para os hóspedes usarem durante a estadia: cooler, cadeiras, carrinho e guarda-sol."),
+  ("Qual o horário de check-in e check-out?", "A entrada (check-in) é a partir das 14h e a saída (check-out) até as 10h."),
  ],
  "fn_eyebrow": "Sua temporada começa aqui", "fn_h2": "Vamos planejar a sua viagem a Ubatuba?",
  "fn_p": "As melhores datas esgotam rápido, principalmente na alta temporada e nos feriados. Chame a gente e garanta o seu apartamento.",
@@ -167,8 +170,8 @@ T = {
  "lz_eyebrow": "Amenities", "lz_h2": "Resort-style living <em>by the beach</em>",
  "lz_p": "Both buildings offer amenities for all ages, so you can enjoy Ubatuba even on rainy days.",
  "condos": {
-  "bambu": ("Bambu Building", "A new building facing Praia Grande, with a rooftop infinity pool overlooking the ocean. Home to apartments 202 and 410."),
-  "dna": ("Reserva DNA Resort", "A beachfront resort with gardens, several pools, a rooftop and full family amenities. Home to apartment 14.4.1."),
+  "bambu": ("Bambu Building", "A new building facing Praia Grande, with a rooftop and an infinity pool."),
+  "dna": ("Reserva DNA Resort", "A beachfront resort with gardens, several pools, a rooftop and full family amenities."),
  },
  "amen": {
   "bambu": ["Infinity pool", "Kids' pool", "Indoor heated pool", "Dry & steam sauna", "Gym", "Game room", "Kids' playroom", "Surf & beach gear storage", "Smart laundry", "Concierge", "24h front desk"],
@@ -189,19 +192,22 @@ T = {
  "steps": [("Choose", "Browse the photos and pick the right apartment for your trip."), ("Message us on WhatsApp", "Send your dates and number of guests. We reply fast."), ("Confirm", "Agree on price and payment directly with the host, or book on Airbnb if you prefer.")],
  "loc_eyebrow": "Location", "loc_h2": "Where to stay: <em>Praia Grande</em>, Ubatuba",
  "loc_p": "Praia Grande is one of Ubatuba's most popular beaches: long, great for swimming and surfing, with kiosks, restaurants and shops along the waterfront and easy access to nearby beaches and downtown.",
- "open_maps": "Open in Maps", "loc_bambu": "Apartments 202 & 410 · Beachfront", "loc_dna": "Apartment 14.4.1 · ~100 m from the sea",
+ "open_maps": "Open in Maps", "loc_bambu": "Apartments 202 & 410 · Beachfront", "loc_dna": "Apartment 14.4.1 · Beachfront",
  "near": ["Waterfront kiosks and restaurants", "Toninhas and Enseada beaches nearby", "Downtown Ubatuba minutes away", "Trails, islands and 100+ beaches in the region"],
  "map_title": "Map of Praia Grande, Ubatuba",
  "faq_eyebrow": "FAQ", "faq_h2": "Frequently asked <em>questions</em>",
  "faq": [
   ("How do I book an apartment?", "Just message us on WhatsApp with your dates and number of guests. We'll confirm availability and arrange everything directly. You can also book through Airbnb."),
   ("How many people does each apartment sleep?", "Up to 6 guests: a suite with a queen bed, a bedroom with two single beds and a sofa bed in the living room."),
-  ("Are the apartments close to the beach?", "Yes. The Bambu apartments face Praia Grande with an ocean view. Reserva DNA is about 100 meters from the sand."),
-  ("Is there air conditioning and Wi-Fi?", "Yes. Every apartment has air conditioning in all bedrooms and Wi-Fi."),
+  ("Are the apartments close to the beach?", "Yes! Both buildings are right on the beach. The Bambu apartments face Praia Grande with an ocean view."),
+  ("Is there air conditioning and Wi-Fi?", "Yes. The apartments have air conditioning in the bedrooms and living room, plus high-speed Wi-Fi."),
   ("Are bed linens and towels included?", "Bed linens, towels, toiletries and cleaning supplies are not included. Message us on WhatsApp if you have any questions."),
   ("Is there parking?", "Yes. The Bambu apartments have 1 parking space and Reserva DNA has 2. Very large vehicles, such as Dodge RAM pickups, do not fit."),
-  ("Can I bring my pet?", "Pets are not allowed at Reserva DNA. For the Bambu apartments, please ask us on WhatsApp."),
-  ("Where should I stay in Ubatuba?", "Praia Grande is one of the best areas to stay in Ubatuba: close to downtown, with waterfront kiosks, restaurants and shops, and easy access to beaches such as Toninhas and Enseada. Our apartments face the sea or are just steps away."),
+  ("Can I bring my pet?", "Sorry, pets are not allowed in our apartments."),
+  ("Where should I stay in Ubatuba?", "Praia Grande is one of the best areas to stay in Ubatuba: close to downtown, with waterfront kiosks, restaurants and shops, and easy access to beaches such as Toninhas and Enseada. Both buildings are right on the beach."),
+  ("Are meals or full board included?", "No. The apartments are in residential buildings, so we offer vacation rentals only, with access to all the leisure areas."),
+  ("Do the apartments have beach gear?", "Yes. Every apartment has beach gear guests can use during their stay: cooler, chairs, beach cart and umbrella."),
+  ("What are the check-in and check-out times?", "Check-in is from 2 pm and check-out is by 10 am."),
  ],
  "fn_eyebrow": "Your getaway starts here", "fn_h2": "Shall we plan your trip to Ubatuba?",
  "fn_p": "The best dates book up fast, especially in high season and on holidays. Message us and secure your apartment.",
@@ -245,8 +251,8 @@ T = {
  "lz_eyebrow": "Áreas comunes", "lz_h2": "Estructura de <em>resort</em> junto al mar",
  "lz_p": "Los dos edificios ofrecen ocio para todas las edades, para disfrutar Ubatuba incluso en días de lluvia.",
  "condos": {
-  "bambu": ("Edificio Bambu", "Edificio nuevo frente a Praia Grande, con rooftop y piscina infinita mirando al mar. Aquí están los apartamentos 202 y 410."),
-  "dna": ("Reserva DNA Resort", "Resort frente al mar con jardines, varias piscinas, rooftop y ocio completo para la familia. Aquí está el apartamento 14.4.1."),
+  "bambu": ("Edificio Bambu", "Edificio nuevo frente a Praia Grande, con rooftop y piscina infinita."),
+  "dna": ("Reserva DNA Resort", "Resort frente al mar con jardines, varias piscinas, rooftop y ocio completo para la familia."),
  },
  "amen": {
   "bambu": ["Piscina infinita", "Piscina infantil", "Piscina climatizada cubierta", "Sauna seca y de vapor", "Gimnasio", "Sala de juegos", "Sala infantil", "Guardería náutica", "Lavandería inteligente", "Conserjería", "Portería 24 h"],
@@ -267,19 +273,22 @@ T = {
  "steps": [("Elige", "Mira las fotos y elige el apartamento ideal para tu viaje."), ("Escríbenos por WhatsApp", "Envía las fechas y la cantidad de huéspedes. Respondemos rápido."), ("Confirma", "Acordamos precio y pago directamente con el anfitrión. Si prefieres, reserva por Airbnb.")],
  "loc_eyebrow": "Ubicación", "loc_h2": "Dónde alojarse: <em>Praia Grande</em>, Ubatuba",
  "loc_p": "Praia Grande es una de las playas más buscadas de Ubatuba: extensa, ideal para bañarse y surfear, con quioscos, restaurantes y comercios en la costanera y fácil acceso a playas vecinas y al Centro.",
- "open_maps": "Abrir en Maps", "loc_bambu": "Apartamentos 202 y 410 · Frente al mar", "loc_dna": "Apartamento 14.4.1 · A ~100 m del mar",
+ "open_maps": "Abrir en Maps", "loc_bambu": "Apartamentos 202 y 410 · Frente al mar", "loc_dna": "Apartamento 14.4.1 · Frente al mar",
  "near": ["Costanera con quioscos y restaurantes", "Playas Toninhas y Enseada cerca", "Centro de Ubatuba a pocos minutos", "Senderos, islas y más de 100 playas en la región"],
  "map_title": "Mapa de Praia Grande, Ubatuba",
  "faq_eyebrow": "Preguntas frecuentes", "faq_h2": "Preguntas <em>frecuentes</em>",
  "faq": [
   ("¿Cómo reservo un apartamento?", "Escríbenos por WhatsApp con las fechas y la cantidad de huéspedes. Confirmamos la disponibilidad y coordinamos todo directamente. También puedes reservar por Airbnb."),
   ("¿Cuántas personas caben en cada apartamento?", "Hasta 6 huéspedes: suite con cama queen, dormitorio con dos camas individuales y sofá cama en la sala."),
-  ("¿Los apartamentos están cerca de la playa?", "Sí. Los apartamentos del edificio Bambu están frente a Praia Grande, con vista al mar. Reserva DNA está a unos 100 metros de la arena."),
-  ("¿Tienen aire acondicionado y Wi-Fi?", "Sí. Todos los apartamentos tienen aire acondicionado en todos los dormitorios y Wi-Fi."),
+  ("¿Los apartamentos están cerca de la playa?", "¡Sí! Los dos edificios están frente al mar. Los apartamentos del edificio Bambu están frente a Praia Grande, con vista al mar."),
+  ("¿Tienen aire acondicionado y Wi-Fi?", "Sí. Los apartamentos tienen aire acondicionado en los dormitorios y en la sala, y Wi-Fi de alta velocidad."),
   ("¿Incluyen ropa de cama y toallas?", "No se incluyen ropa de cama, toallas ni productos de higiene y limpieza. Escríbenos por WhatsApp si tienes dudas."),
   ("¿Hay cochera?", "Sí. Los apartamentos Bambu tienen 1 cochera y Reserva DNA tiene 2. Vehículos muy grandes, como camionetas Dodge RAM, no caben."),
-  ("¿Puedo llevar mi mascota?", "En Reserva DNA no se permiten mascotas. Para los apartamentos del edificio Bambu, consúltanos por WhatsApp."),
-  ("¿Dónde alojarse en Ubatuba?", "Praia Grande es una de las mejores zonas para alojarse en Ubatuba: cerca del Centro, con quioscos, restaurantes y comercios en la costanera y fácil acceso a playas como Toninhas y Enseada. Nuestros apartamentos están frente al mar o a pocos pasos."),
+  ("¿Puedo llevar mi mascota?", "Lo sentimos, no aceptamos mascotas en nuestros apartamentos."),
+  ("¿Dónde alojarse en Ubatuba?", "Praia Grande es una de las mejores zonas para alojarse en Ubatuba: cerca del Centro, con quioscos, restaurantes y comercios en la costanera y fácil acceso a playas como Toninhas y Enseada. Los dos edificios están frente al mar."),
+  ("¿Se ofrece alimentación o pensión completa?", "No. Los apartamentos están en edificios residenciales, por lo que ofrecemos solo alquiler vacacional, con uso de todas las áreas de ocio."),
+  ("¿Los apartamentos tienen accesorios de playa?", "Sí. Todos los apartamentos tienen accesorios de playa para usar durante la estadía: conservadora, sillas, carrito y sombrilla."),
+  ("¿Cuál es el horario de check-in y check-out?", "La entrada (check-in) es a partir de las 14 h y la salida (check-out) hasta las 10 h."),
  ],
  "fn_eyebrow": "Tus vacaciones empiezan aquí", "fn_h2": "¿Planeamos tu viaje a Ubatuba?",
  "fn_p": "Las mejores fechas se agotan rápido, sobre todo en temporada alta y feriados. Escríbenos y asegura tu apartamento.",
@@ -446,7 +455,7 @@ def build(lang, images, css):
               "image": [SITE_URL + "/" + it["src"] for it in images[a["key"]][:8]],
               "numberOfRooms": a["bedrooms"], "numberOfBedrooms": a["bedrooms"], "numberOfBathroomsTotal": a["baths"] + a.get("social", 0),
               "occupancy": {"@type": "QuantitativeValue", "maxValue": a["guests"]},
-              "petsAllowed": False if a["condo"] == "dna" else None,
+              "petsAllowed": False,
               "aggregateRating": {"@type": "AggregateRating", "ratingValue": a["rating"], "reviewCount": a["reviews"], "bestRating": 5}}
              for a in APTS],
          "inLanguage": HREFLANG[lang]},
@@ -497,9 +506,9 @@ def build(lang, images, css):
     header = f'''<a class="skip" href="#main">{t["skip"]}</a>
 <header class="hdr"><div class="wrap hdr-in">
 <a class="logo" href="#top" aria-label="Bambu Ubatuba"><img class="logo-w" src="{P}img/brand/logo-bambu-branco.svg" width="98" height="35" alt="Bambu Ubatuba"><img class="logo-c" src="{P}img/brand/logo-bambu.svg" width="98" height="35" alt=""></a>
-<nav class="nav" aria-label="Menu">{nav}<a class="nav-ig" href="{INSTAGRAM}" target="_blank" rel="noopener"><img src="{P}img/brand/instagram-branco.png" width="17" height="17" alt="">Instagram</a></nav>
+<nav class="nav" aria-label="Menu">{nav}<a class="nav-ig" href="{INSTAGRAM}" target="_blank" rel="noopener"><img src="{P}img/brand/instagram-color.png" width="18" height="18" alt="">Instagram</a></nav>
 <div class="langs">{langs}</div>
-<a class="hdr-ig" href="{INSTAGRAM}" target="_blank" rel="noopener" aria-label="Instagram @bambu.ubatuba"><img src="{P}img/brand/instagram-branco.png" width="26" height="26" alt=""></a>
+<a class="hdr-ig" href="{INSTAGRAM}" target="_blank" rel="noopener" aria-label="Instagram @bambu.ubatuba"><img src="{P}img/brand/instagram-color.png" width="28" height="28" alt=""></a>
 <a class="btn btn-wa" href="{wa_link(t["wa_msg"])}" target="_blank" rel="noopener" aria-label="{t["wa_btn"]}">{WA}<span>{t["wa_short"]}</span></a>
 <button class="burger" aria-label="{t["menu"]}" aria-expanded="false"><span></span><span></span><span></span></button>
 </div></header>'''
