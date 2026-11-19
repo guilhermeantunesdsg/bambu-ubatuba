@@ -59,6 +59,19 @@ section{scroll-margin-top:72px}
 .nav-open .burger span:nth-child(2){opacity:0}
 .nav-open .burger span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
 
+/* ---------- Logo e Instagram no header ---------- */
+.logo img{display:block;height:35px;width:auto}
+.logo .logo-c{display:none}
+.hdr.solid .logo .logo-w{display:none}
+.hdr.solid .logo .logo-c{display:block}
+.ftr .logo img{height:45px}
+.nav-ig{display:inline-flex;align-items:center;gap:7px}
+.nav-ig img{width:17px;height:17px}
+.hdr-ig{display:none;width:40px;height:40px;place-items:center;border-radius:50%;transition:opacity .2s}
+.hdr-ig:hover{opacity:.8}
+.hdr-ig img{width:26px;height:26px}
+.hdr.solid .nav-ig img,.hdr.solid .hdr-ig img,.nav-open .nav-ig img{filter:brightness(0);opacity:.82}
+
 /* ---------- Hero ---------- */
 .hero{position:relative;min-height:100vh;min-height:100svh;display:flex;align-items:flex-end;color:#fff;overflow:hidden;background:var(--ocean-deep)}
 .hero picture,.hero picture img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
@@ -196,6 +209,26 @@ section{scroll-margin-top:72px}
 .topics span{background:#fff;border:1px solid var(--line);padding:8px 16px;border-radius:999px;font-size:.86rem}
 .topics b{color:var(--bamboo)}
 
+/* ---------- Instagram ---------- */
+.ig{background:#fff}
+.ig-grid{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.4fr);gap:clamp(28px,5vw,72px);align-items:center}
+.ig-card{background:var(--sand);border:1px solid var(--line);border-radius:22px;padding:24px;display:flex;flex-direction:column;gap:20px}
+.ig-prof{display:flex;align-items:center;gap:16px;min-width:0}
+.ig-av{width:78px;height:78px;border-radius:50%;padding:3px;background:linear-gradient(45deg,#f58529,#dd2a7b,#8134af,#515bd4);flex:none}
+.ig-av>span{display:grid;place-items:center;width:100%;height:100%;border-radius:50%;background:#fff;border:3px solid #fff}
+.ig-av img{width:78%;height:auto}
+.ig-prof b{display:block;font-size:1.08rem}
+.ig-prof small{display:block;color:var(--ink-soft);font-size:.86rem;line-height:1.4}
+.btn-ig{background:linear-gradient(45deg,#f58529,#dd2a7b 45%,#8134af 75%,#515bd4);color:#fff;box-shadow:0 12px 30px -14px rgba(221,42,123,.7)}
+.btn-ig img{width:18px;height:18px}
+.ig-feed{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.ig-tile{position:relative;display:block;aspect-ratio:1;border-radius:14px;overflow:hidden;background:var(--mist)}
+.ig-tile .ph{width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.ig-ov{position:absolute;inset:0;display:grid;place-items:center;background:rgba(6,44,66,.45);opacity:0;transition:opacity .3s}
+.ig-ov img{width:34px;height:34px}
+.ig-tile:hover .ig-ov,.ig-tile:focus-visible .ig-ov{opacity:1}
+.ig-tile:hover .ph{transform:scale(1.06)}
+
 /* ---------- Como reservar ---------- */
 .steps{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(3,1fr);gap:20px;counter-reset:s}
 .steps li{background:#fff;border-radius:var(--r);padding:34px 30px;border:1px solid var(--line);position:relative;counter-increment:s}
@@ -279,6 +312,7 @@ section{scroll-margin-top:72px}
 @media (max-width:1080px){
   .nav{display:none}
   .burger{display:block}
+  .hdr-ig{display:grid}
   .nav-open .nav{display:flex;position:fixed;top:72px;left:0;right:0;flex-direction:column;gap:0;background:#fff;color:var(--ink);padding:8px 16px 20px;box-shadow:0 20px 40px -20px rgba(0,0,0,.3)}
   .nav-open .nav a{padding:14px 4px;border-bottom:1px solid var(--line);font-size:1rem}
   .nav-open .hdr{background:#fff;color:var(--ink)}
@@ -293,13 +327,15 @@ section{scroll-margin-top:72px}
 @media (max-width:860px){
   .loc-grid,.rev-top{grid-template-columns:1fr}
   .steps{grid-template-columns:1fr}
+  .ig-grid{grid-template-columns:1fr}
+  .ig-feed{gap:6px}
+  .ig-tile{border-radius:10px}
   .bento{grid-template-columns:repeat(2,1fr);grid-auto-rows:150px}
   .bento button:nth-child(4){grid-row:span 1}
   .map{min-height:340px}
 }
 @media (max-width:640px){
-  .hdr .btn-wa span{display:none}
-  .hdr .btn-wa{padding:.6em;border-radius:50%}
+  .hdr .btn-wa{display:none}
   .hdr-in{gap:12px}
   .langs a{width:26px;height:18px}
   .logo b{font-size:1.4rem}.logo small{letter-spacing:.26em}
@@ -327,3 +363,5 @@ html.lenis,html.lenis body{height:auto}
 .lenis.lenis-smooth{scroll-behavior:auto!important}
 .lenis.lenis-smooth [data-lenis-prevent]{overscroll-behavior:contain}
 .lenis.lenis-stopped{overflow:hidden}
+
+.hdr:not(.solid) .logo-w{filter:drop-shadow(0 1px 10px rgba(2,18,28,.35))}

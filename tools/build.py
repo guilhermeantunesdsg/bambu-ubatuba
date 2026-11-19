@@ -34,7 +34,7 @@ APTS = [
      "rating": 4.96, "reviews": 25, "fav": True, "top1": False, "guests": 6, "bedrooms": 2, "beds": 4, "baths": 2, "parking": 1,
      "cats": [5.0, 5.0, 5.0, 5.0, 5.0, 4.9]},
     {"key": "reserva-dna", "name": "Reserva DNA 14.4.1", "condo": "dna", "airbnb": "https://www.airbnb.com.br/rooms/913872230965185636",
-     "rating": 4.93, "reviews": 15, "fav": False, "top1": False, "guests": 6, "bedrooms": 2, "beds": 4, "baths": 4, "parking": 2,
+     "rating": 4.93, "reviews": 15, "fav": False, "top1": False, "guests": 6, "bedrooms": 2, "suites": True, "beds": 4, "baths": 3, "social": 1, "parking": 2,
      "cats": [4.9, 4.9, 4.8, 5.0, 4.6, 4.7]},
 ]
 
@@ -63,26 +63,26 @@ T = {
  "wa_apt": "Olá! Tenho interesse no apartamento {apt}. Gostaria de consultar disponibilidade para as datas: ",
  "eyebrow": "Praia Grande · Ubatuba · SP",
  "h1": "Apartamentos <em>frente ao mar</em> em Ubatuba",
- "lead": "Locação por temporada de alto padrão na Praia Grande, Litoral Norte de São Paulo. Apartamentos novos e decorados, com vista para o mar e condomínios com estrutura de resort: piscina de borda infinita, piscina aquecida, sauna e academia.",
+ "lead": "Locação por temporada de alto padrão na Praia Grande, Litoral Norte de São Paulo.<br>Apartamentos novos e decorados, com vista para o mar em condomínios com estrutura de lazer completa: piscina de borda infinita, piscina aquecida, sauna e academia.",
  "see_apts": "Ver apartamentos",
  "chip_rating": "5,0 no Airbnb", "chip_super": "Superhost", "chip_fav": "Preferido dos hóspedes",
  "trust": [("+1.000", "hospedagens realizadas"), ("Superhost", "anfitrião reconhecido no Airbnb"), ("Top 1%", "Preferido dos hóspedes no Airbnb"), ("1 hora", "tempo médio de resposta")],
  "apts_eyebrow": "Os apartamentos", "apts_h2": "Apartamentos para locação <em>em Ubatuba</em>",
- "apts_p": "Aluguel de temporada direto com o anfitrião. Cada apartamento recebe até 6 hóspedes, com suíte, ar-condicionado em todos os ambientes, varanda gourmet e vaga de garagem. Escolha o seu e fale com a gente.",
+ "apts_p": "Aluguel de temporada direto com o anfitrião. Apartamentos que acomodam até 6 hóspedes, com suíte, ar-condicionado em todos os ambientes, varanda gourmet e vaga de garagem.",
  "condo": {"bambu": "Condomínio Bambu · Vista mar", "dna": "Reserva DNA Resort · Frente mar"},
  "reviews_word": "avaliações", "see_airbnb": "Ver no Airbnb", "photos": "Ver as {n} fotos",
  "fav_badge": "Preferido dos hóspedes", "top1": "Top 1% do Airbnb",
- "spec": {"guests": "hóspedes", "bedrooms": "quartos", "beds": "camas", "baths": "banheiros", "parking_1": "vaga", "parking_n": "vagas", "ac": "em todos os quartos"},
+ "spec": {"suites": "suítes", "social": "+ 1 social", "guests": "hóspedes", "bedrooms": "quartos", "beds": "camas", "baths": "banheiros", "parking_1": "vaga", "parking_n": "vagas", "ac": "em todos os quartos"},
  "ac": "Ar-cond.",
  "apt_desc": {
   "bambu-202": "Apartamento novo e totalmente decorado de frente para o mar da Praia Grande. Varanda gourmet com vista, cozinha completa, suíte com cama queen, quarto com duas camas de solteiro e sofá-cama na sala.",
   "bambu-410": "No 4º andar, com uma das vistas mais bonitas do prédio: mar, montanhas e a orla da Praia Grande. Moderno, completo e decorado, com varanda gourmet, suíte com cama queen e quarto com duas camas.",
-  "reserva-dna": "Um verdadeiro resort frente ao mar, a cerca de 100 m da areia. Amplo, com 4 banheiros, varanda gourmet com churrasqueira e vista para o jardim, suíte com cama queen e 2 vagas de garagem.",
+  "reserva-dna": "Um verdadeiro resort à beira-mar.<br>Amplo, confortável, com 2 suítes, varanda gourmet com churrasqueira e vista para o jardim, suíte com cama queen e 2 vagas de garagem.",
  },
  "apt_hl": {
   "bambu-202": ["Vista para o mar", "Varanda gourmet", "Piscina de borda infinita", "Wi-Fi"],
   "bambu-410": ["Vista mar e montanhas", "Varanda gourmet", "Piscina aquecida", "Wi-Fi"],
-  "reserva-dna": ["Churrasqueira na varanda", "4 banheiros", "Cinema e hidromassagem", "Wi-Fi"],
+  "reserva-dna": ["Churrasqueira na varanda", "2 suítes", "Cinema e hidromassagem", "Wi-Fi"],
  },
  "lz_eyebrow": "Lazer completo", "lz_h2": "Lazer de <em>resort</em> à beira-mar",
  "lz_p": "Os dois condomínios oferecem lazer para todas as idades, para você aproveitar Ubatuba mesmo nos dias de chuva.",
@@ -104,6 +104,7 @@ T = {
  "topics_title": "Mais citados pelos hóspedes:",
  "topics": [("Hospitalidade", 26), ("Localização", 18), ("Limpeza", 16), ("Espaço interno", 12), ("Conforto", 9), ("Família", 9)],
  "mentions": "menções",
+ "ig_eyebrow": "Instagram", "ig_h2": "Acompanhe a Bambu <em>no Instagram</em>", "ig_p": "Fotos dos apartamentos, novidades, dicas de Ubatuba e datas disponíveis. Siga para ficar por dentro.", "ig_name": "Apartamentos Bambu e DNA Resort", "ig_follow": "Seguir no Instagram", "ig_tile": "Ver no Instagram",
  "bk_eyebrow": "Como reservar", "bk_h2": "Reservar é <em>simples</em>",
  "steps": [("Escolha", "Veja as fotos e escolha o apartamento ideal para a sua viagem."), ("Chame no WhatsApp", "Envie as datas e o número de hóspedes. Respondemos rapidinho."), ("Confirme", "Combinamos valores e pagamento direto com o anfitrião. Se preferir, reserve pelo Airbnb.")],
  "loc_eyebrow": "Localização", "loc_h2": "Hospedagem na <em>Praia Grande</em>, Ubatuba",
@@ -140,26 +141,26 @@ T = {
  "wa_apt": "Hi! I'm interested in the {apt} apartment. I'd like to check availability for these dates: ",
  "eyebrow": "Praia Grande · Ubatuba · Brazil",
  "h1": "Beachfront <em>apartments</em> in Ubatuba",
- "lead": "High-end vacation rentals in Praia Grande, on the north coast of São Paulo, Brazil. Brand-new, decorated ocean-view apartments in buildings with resort amenities: infinity pool, heated pool, sauna and gym.",
+ "lead": "High-end vacation rentals in Praia Grande, on the north coast of São Paulo, Brazil.<br>Brand-new, decorated ocean-view apartments in buildings with full leisure amenities: infinity pool, heated pool, sauna and gym.",
  "see_apts": "See apartments",
  "chip_rating": "5.0 on Airbnb", "chip_super": "Superhost", "chip_fav": "Guest favorite",
  "trust": [("1,000+", "stays hosted"), ("Superhost", "recognized Airbnb host"), ("Top 1%", "Guest favorite on Airbnb"), ("1 hour", "average response time")],
  "apts_eyebrow": "The apartments", "apts_h2": "Vacation apartments <em>in Ubatuba</em>",
- "apts_p": "Each apartment sleeps up to 6 guests, with an en-suite bedroom, air conditioning in every room, a gourmet balcony and a parking space. Pick yours and get in touch.",
+ "apts_p": "Vacation rentals booked directly with the host. Apartments that sleep up to 6 guests, with an en-suite bedroom, air conditioning in every room, a gourmet balcony and a parking space.",
  "condo": {"bambu": "Bambu Building · Ocean view", "dna": "Reserva DNA Resort · Beachfront"},
  "reviews_word": "reviews", "see_airbnb": "View on Airbnb", "photos": "See all {n} photos",
  "fav_badge": "Guest favorite", "top1": "Top 1% on Airbnb",
- "spec": {"guests": "guests", "bedrooms": "bedrooms", "beds": "beds", "baths": "bathrooms", "parking_1": "parking space", "parking_n": "parking spaces", "ac": "in every bedroom"},
+ "spec": {"suites": "suites", "social": "+ 1 half bath", "guests": "guests", "bedrooms": "bedrooms", "beds": "beds", "baths": "bathrooms", "parking_1": "parking space", "parking_n": "parking spaces", "ac": "in every bedroom"},
  "ac": "A/C",
  "apt_desc": {
   "bambu-202": "A brand-new, fully decorated apartment facing the sea at Praia Grande. Gourmet balcony with a view, full kitchen, suite with a queen bed, bedroom with two single beds and a sofa bed in the living room.",
   "bambu-410": "On the 4th floor, with one of the best views in the building: ocean, mountains and the Praia Grande shoreline. Modern, complete and decorated, with a gourmet balcony, queen suite and a twin bedroom.",
-  "reserva-dna": "A true beachfront resort, about 100 m from the sand. Spacious, with 4 bathrooms, a gourmet balcony with barbecue grill overlooking the garden, a queen suite and 2 parking spaces.",
+  "reserva-dna": "A true beachfront resort.<br>Spacious and comfortable, with 2 suites, a gourmet balcony with barbecue grill overlooking the garden, a queen suite and 2 parking spaces.",
  },
  "apt_hl": {
   "bambu-202": ["Ocean view", "Gourmet balcony", "Infinity pool", "Wi-Fi"],
   "bambu-410": ["Ocean & mountain view", "Gourmet balcony", "Heated pool", "Wi-Fi"],
-  "reserva-dna": ["Balcony barbecue grill", "4 bathrooms", "Cinema & hot tub", "Wi-Fi"],
+  "reserva-dna": ["Balcony barbecue grill", "2 suites", "Cinema & hot tub", "Wi-Fi"],
  },
  "lz_eyebrow": "Amenities", "lz_h2": "Resort-style living <em>by the beach</em>",
  "lz_p": "Both buildings offer amenities for all ages, so you can enjoy Ubatuba even on rainy days.",
@@ -181,6 +182,7 @@ T = {
  "topics_title": "Most mentioned by guests:",
  "topics": [("Hospitality", 26), ("Location", 18), ("Cleanliness", 16), ("Indoor space", 12), ("Comfort", 9), ("Family", 9)],
  "mentions": "mentions",
+ "ig_eyebrow": "Instagram", "ig_h2": "Follow Bambu <em>on Instagram</em>", "ig_p": "Apartment photos, news, Ubatuba tips and available dates. Follow along.", "ig_name": "Bambu & DNA Resort Apartments", "ig_follow": "Follow on Instagram", "ig_tile": "View on Instagram",
  "bk_eyebrow": "How to book", "bk_h2": "Booking is <em>easy</em>",
  "steps": [("Choose", "Browse the photos and pick the right apartment for your trip."), ("Message us on WhatsApp", "Send your dates and number of guests. We reply fast."), ("Confirm", "Agree on price and payment directly with the host, or book on Airbnb if you prefer.")],
  "loc_eyebrow": "Location", "loc_h2": "Where to stay: <em>Praia Grande</em>, Ubatuba",
@@ -217,26 +219,26 @@ T = {
  "wa_apt": "¡Hola! Me interesa el apartamento {apt}. Quisiera consultar disponibilidad para las fechas: ",
  "eyebrow": "Praia Grande · Ubatuba · Brasil",
  "h1": "Apartamentos <em>frente al mar</em> en Ubatuba",
- "lead": "Alquiler vacacional de alto nivel en Praia Grande, litoral norte de São Paulo, Brasil. Apartamentos nuevos y decorados, con vista al mar y edificios con estructura de resort: piscina infinita, piscina climatizada, sauna y gimnasio.",
+ "lead": "Alquiler vacacional de alto nivel en Praia Grande, litoral norte de São Paulo, Brasil.<br>Apartamentos nuevos y decorados, con vista al mar en edificios con estructura de ocio completa: piscina infinita, piscina climatizada, sauna y gimnasio.",
  "see_apts": "Ver apartamentos",
  "chip_rating": "5,0 en Airbnb", "chip_super": "Superhost", "chip_fav": "Favorito de los huéspedes",
  "trust": [("+1.000", "estadías realizadas"), ("Superhost", "anfitrión reconocido en Airbnb"), ("Top 1%", "Favorito de los huéspedes en Airbnb"), ("1 hora", "tiempo medio de respuesta")],
  "apts_eyebrow": "Los apartamentos", "apts_h2": "Apartamentos vacacionales <em>en Ubatuba</em>",
- "apts_p": "Cada apartamento recibe hasta 6 huéspedes, con suite, aire acondicionado en todos los ambientes, balcón gourmet y cochera. Elige el tuyo y escríbenos.",
+ "apts_p": "Alquiler vacacional directo con el anfitrión. Apartamentos para hasta 6 huéspedes, con suite, aire acondicionado en todos los ambientes, balcón gourmet y cochera.",
  "condo": {"bambu": "Edificio Bambu · Vista al mar", "dna": "Reserva DNA Resort · Frente al mar"},
  "reviews_word": "reseñas", "see_airbnb": "Ver en Airbnb", "photos": "Ver las {n} fotos",
  "fav_badge": "Favorito de los huéspedes", "top1": "Top 1% de Airbnb",
- "spec": {"guests": "huéspedes", "bedrooms": "dormitorios", "beds": "camas", "baths": "baños", "parking_1": "cochera", "parking_n": "cocheras", "ac": "en todos los dormitorios"},
+ "spec": {"suites": "suites", "social": "+ 1 de visitas", "guests": "huéspedes", "bedrooms": "dormitorios", "beds": "camas", "baths": "baños", "parking_1": "cochera", "parking_n": "cocheras", "ac": "en todos los dormitorios"},
  "ac": "Aire acond.",
  "apt_desc": {
   "bambu-202": "Apartamento nuevo y totalmente decorado frente al mar de Praia Grande. Balcón gourmet con vista, cocina completa, suite con cama queen, dormitorio con dos camas individuales y sofá cama en la sala.",
   "bambu-410": "En el 4.º piso, con una de las vistas más lindas del edificio: mar, montañas y la costanera de Praia Grande. Moderno, completo y decorado, con balcón gourmet, suite queen y dormitorio con dos camas.",
-  "reserva-dna": "Un verdadero resort frente al mar, a unos 100 m de la arena. Amplio, con 4 baños, balcón gourmet con parrilla y vista al jardín, suite con cama queen y 2 cocheras.",
+  "reserva-dna": "Un verdadero resort junto al mar.<br>Amplio y cómodo, con 2 suites, balcón gourmet con parrilla y vista al jardín, suite con cama queen y 2 cocheras.",
  },
  "apt_hl": {
   "bambu-202": ["Vista al mar", "Balcón gourmet", "Piscina infinita", "Wi-Fi"],
   "bambu-410": ["Vista al mar y montañas", "Balcón gourmet", "Piscina climatizada", "Wi-Fi"],
-  "reserva-dna": ["Parrilla en el balcón", "4 baños", "Cine y jacuzzi", "Wi-Fi"],
+  "reserva-dna": ["Parrilla en el balcón", "2 suites", "Cine y jacuzzi", "Wi-Fi"],
  },
  "lz_eyebrow": "Áreas comunes", "lz_h2": "Estructura de <em>resort</em> junto al mar",
  "lz_p": "Los dos edificios ofrecen ocio para todas las edades, para disfrutar Ubatuba incluso en días de lluvia.",
@@ -258,6 +260,7 @@ T = {
  "topics_title": "Lo más mencionado por los huéspedes:",
  "topics": [("Hospitalidad", 26), ("Ubicación", 18), ("Limpieza", 16), ("Espacio interior", 12), ("Comodidad", 9), ("Familia", 9)],
  "mentions": "menciones",
+ "ig_eyebrow": "Instagram", "ig_h2": "Sigue a Bambu <em>en Instagram</em>", "ig_p": "Fotos de los apartamentos, novedades, consejos de Ubatuba y fechas disponibles. Síguenos.", "ig_name": "Apartamentos Bambu y DNA Resort", "ig_follow": "Seguir en Instagram", "ig_tile": "Ver en Instagram",
  "bk_eyebrow": "Cómo reservar", "bk_h2": "Reservar es <em>simple</em>",
  "steps": [("Elige", "Mira las fotos y elige el apartamento ideal para tu viaje."), ("Escríbenos por WhatsApp", "Envía las fechas y la cantidad de huéspedes. Respondemos rápido."), ("Confirma", "Acordamos precio y pago directamente con el anfitrión. Si prefieres, reserva por Airbnb.")],
  "loc_eyebrow": "Ubicación", "loc_h2": "Dónde alojarse: <em>Praia Grande</em>, Ubatuba",
@@ -388,6 +391,10 @@ FLAGS = {
 }
 
 # ------------------------------ Utilidades ------------------------------
+def strip_tags(x):
+    import re
+    return re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", x)).strip()
+
 def num(v, lang, dec=2):
     s = f"{v:.{dec}f}".rstrip("0").rstrip(".") if dec else str(v)
     if "." not in s and dec:
@@ -430,9 +437,9 @@ def build(lang, images, css):
          "areaServed": "Ubatuba, SP", "sameAs": [INSTAGRAM] + [a["airbnb"] for a in APTS],
          "amenityFeature": [{"@type": "LocationFeatureSpecification", "name": n, "value": True} for n in t["amen"]["bambu"][:6]],
          "containsPlace": [
-             {"@type": "Apartment", "name": titles[a["key"]], "url": a["airbnb"], "description": t["apt_desc"][a["key"]],
+             {"@type": "Apartment", "name": titles[a["key"]], "url": a["airbnb"], "description": strip_tags(t["apt_desc"][a["key"]]),
               "image": [SITE_URL + "/" + it["src"] for it in images[a["key"]][:8]],
-              "numberOfRooms": a["bedrooms"], "numberOfBedrooms": a["bedrooms"], "numberOfBathroomsTotal": a["baths"],
+              "numberOfRooms": a["bedrooms"], "numberOfBedrooms": a["bedrooms"], "numberOfBathroomsTotal": a["baths"] + a.get("social", 0),
               "occupancy": {"@type": "QuantitativeValue", "maxValue": a["guests"]},
               "petsAllowed": False if a["condo"] == "dna" else None,
               "aggregateRating": {"@type": "AggregateRating", "ratingValue": a["rating"], "reviewCount": a["reviews"], "bestRating": 5}}
@@ -484,9 +491,10 @@ def build(lang, images, css):
     langs = langs.replace(f'href="{PREFIX[lang]}"', f'href="{PREFIX[lang] or "./"}"')
     header = f'''<a class="skip" href="#main">{t["skip"]}</a>
 <header class="hdr"><div class="wrap hdr-in">
-<a class="logo" href="#top" aria-label="Bambu Ubatuba">{LOGO}<span><b>Bambu</b><small>UBATUBA</small></span></a>
-<nav class="nav" aria-label="Menu">{nav}</nav>
+<a class="logo" href="#top" aria-label="Bambu Ubatuba"><img class="logo-w" src="{P}img/brand/logo-bambu-branco.svg" width="98" height="35" alt="Bambu Ubatuba"><img class="logo-c" src="{P}img/brand/logo-bambu.svg" width="98" height="35" alt=""></a>
+<nav class="nav" aria-label="Menu">{nav}<a class="nav-ig" href="{INSTAGRAM}" target="_blank" rel="noopener"><img src="{P}img/brand/instagram-branco.png" width="17" height="17" alt="">Instagram</a></nav>
 <div class="langs">{langs}</div>
+<a class="hdr-ig" href="{INSTAGRAM}" target="_blank" rel="noopener" aria-label="Instagram @bambu.ubatuba"><img src="{P}img/brand/instagram-branco.png" width="26" height="26" alt=""></a>
 <a class="btn btn-wa" href="{wa_link(t["wa_msg"])}" target="_blank" rel="noopener" aria-label="{t["wa_btn"]}">{WA}<span>{t["wa_short"]}</span></a>
 <button class="burger" aria-label="{t["menu"]}" aria-expanded="false"><span></span><span></span><span></span></button>
 </div></header>'''
@@ -522,8 +530,8 @@ def build(lang, images, css):
         cover = imgs[0]
         fav = (f'<span class="apt-fav">{laurel(18, "#1f5e40")}{t["fav_badge"]}{" · Top 1%" if a["top1"] else ""}</span>' if a["fav"] else "")
         specs = [
-            (I_GUESTS, a["guests"], sp["guests"]), (I_DOOR, a["bedrooms"], sp["bedrooms"]),
-            (I_BATH, a["baths"], sp["baths"]), (I_CAR, a["parking"], sp["parking_1"] if a["parking"] == 1 else sp["parking_n"]),
+            (I_GUESTS, a["guests"], sp["guests"]), (I_DOOR, a["bedrooms"], sp["suites"] if a.get("suites") else sp["bedrooms"]),
+            (I_BATH, a["baths"], sp["baths"] + (" " + sp["social"] if a.get("social") else "")), (I_CAR, a["parking"], sp["parking_1"] if a["parking"] == 1 else sp["parking_n"]),
         ]
         specs_html = "".join(f'<li>{i}<span><b>{v}</b> {l}</span></li>' for i, v, l in specs)
         hl = "".join(f"<li>{h}</li>" for h in t["apt_hl"][k][:3])
@@ -596,6 +604,20 @@ def build(lang, images, css):
 <div class="topics rv" aria-label="{t["topics_title"]}">{topics}</div>
 </div></section>'''
 
+    # --- Instagram ---
+    ig_png = f'{P}img/brand/instagram-branco.png'
+    picks = [("lazer-bambu", 0), ("bambu-410", 0), ("lazer-dna", 0), ("bambu-202", 1), ("reserva-dna", 0), ("lazer-bambu", 1)]
+    tiles = "".join(
+        f'<a class="ig-tile" href="{INSTAGRAM}" target="_blank" rel="noopener" aria-label="{t["ig_tile"]}">'
+        + img_tag(images[al][n], P, alt_for(images[al][n], lang, titles[al]), "(max-width:860px) 33vw, 240px", cls="ph")
+        + f'<span class="ig-ov"><img src="{ig_png}" width="34" height="34" alt=""></span></a>' for al, n in picks)
+    ig_sec = f'''<section class="sec ig" id="instagram"><div class="wrap ig-grid">
+<div class="ig-side rv"><div class="sec-head" style="margin-bottom:28px"><span class="eyebrow">{t["ig_eyebrow"]}</span><h2>{t["ig_h2"]}</h2><p>{t["ig_p"]}</p></div>
+<div class="ig-card"><div class="ig-prof"><span class="ig-av"><span><img src="{P}img/brand/logo-bambu.svg" width="60" height="22" alt=""></span></span><div><b>@bambu.ubatuba</b><small>{t["ig_name"]}</small><small>Praia Grande · Ubatuba – SP</small></div></div>
+<a class="btn btn-ig" href="{INSTAGRAM}" target="_blank" rel="noopener"><img src="{ig_png}" width="18" height="18" alt="">{t["ig_follow"]}</a></div></div>
+<div class="ig-feed rv">{tiles}</div>
+</div></section>'''
+
     # --- Como reservar ---
     steps = "".join(f'<li class="rv"><h3>{a}</h3><p>{b}</p></li>' for a, b in t["steps"])
     book_sec = f'''<section class="sec" id="reservar" style="padding-top:0;background:var(--mist)"><div class="wrap">
@@ -636,7 +658,7 @@ def build(lang, images, css):
     ft_nav = "".join(f'<li><a href="#{i}">{n}</a></li>' for i, n in zip(ids, t["nav"]))
     footer = f'''<footer class="ftr"><div class="wrap">
 <div class="ftr-grid">
-<div><a class="logo" href="#top">{LOGO}<span><b>Bambu</b><small>UBATUBA</small></span></a><p>{t["ft_about"]}</p></div>
+<div><a class="logo" href="#top" aria-label="Bambu Ubatuba"><img src="{P}img/brand/logo-bambu-branco.svg" width="126" height="45" alt="Bambu Ubatuba" loading="lazy"></a><p>{t["ft_about"]}</p></div>
 <div><h4>{t["ft_apts"]}</h4><ul>{ft_apts}</ul></div>
 <div><h4>{t["ft_links"]}</h4><ul>{ft_nav}</ul></div>
 <div><h4>{t["ft_contact"]}</h4><ul>
@@ -655,7 +677,7 @@ def build(lang, images, css):
 <script type="application/json" id="albums">{json.dumps(albums, ensure_ascii=False, separators=(",", ":"))}</script>
 <script src="{P}js/main.js" defer></script>'''
 
-    body = (f'<body>{header}<main id="main">{hero_html}{trust}{apts_sec}{lazer_sec}{rev_sec}{book_sec}{loc_sec}{faq_sec}{final_sec}</main>{footer}</body></html>')
+    body = (f'<body>{header}<main id="main">{hero_html}{trust}{apts_sec}{lazer_sec}{rev_sec}{ig_sec}{book_sec}{loc_sec}{faq_sec}{final_sec}</main>{footer}</body></html>')
     return head + "\n" + body
 
 
