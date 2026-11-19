@@ -45,17 +45,7 @@ APTS = [
 #  "text": {"pt": "Texto original...", "en": "English translation...", "es": "Traducción..."}},
 REVIEWS = []
 
-# Posts do Instagram em destaque (links públicos: no post, ⋯ → Copiar link).
-# Com a lista vazia, a seção mostra a grade de fotos do site.
-INSTAGRAM_POSTS = [
-    "https://www.instagram.com/p/Db_INsei5JR/",
-    "https://www.instagram.com/p/DMk88ebuniU/",
-    "https://www.instagram.com/p/DAbCdIdOlZP/",
-    "https://www.instagram.com/p/DfxmQ_hhPw-/",
-    "https://www.instagram.com/p/DfxFFxpBLLx/",
-    "https://www.instagram.com/p/DfucsCRiSxK/",
-    "https://www.instagram.com/p/DfsfpHRByjo/",
-]
+# Para usar prints reais do Instagram nos aparelhos: salve site/img/instagram/print-desktop.webp e print-iphone.webp
 # ======================================================================
 
 LANGS = ["pt", "en", "es"]
@@ -619,28 +609,46 @@ def build(lang, images, css):
 <div class="topics rv" aria-label="{t["topics_title"]}">{topics}</div>
 </div></section>'''
 
-    # --- Instagram ---
+    # --- Instagram (mockup notebook + iPhone) ---
     ig_png = f'{P}img/brand/instagram-branco.png'
-    picks = [("lazer-bambu", 0), ("bambu-410", 0), ("lazer-dna", 0), ("bambu-202", 1), ("reserva-dna", 0), ("lazer-bambu", 1)]
-    tiles = "".join(
-        f'<a class="ig-tile" href="{INSTAGRAM}" target="_blank" rel="noopener" aria-label="{t["ig_tile"]}">'
-        + img_tag(images[al][n], P, alt_for(images[al][n], lang, titles[al]), "(max-width:860px) 33vw, 240px", cls="ph")
-        + f'<span class="ig-ov"><img src="{ig_png}" width="34" height="34" alt=""></span></a>' for al, n in picks)
-    if INSTAGRAM_POSTS:
-        posts = "".join(
-            f'<blockquote class="instagram-media" data-instgrm-permalink="{u.split("?")[0]}?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14">'
-            f'<a href="{u.split("?")[0]}" target="_blank" rel="noopener">{t["ig_tile"]}</a></blockquote>' for u in INSTAGRAM_POSTS)
-        feed = (f'<div class="ig-wrap rv"><div class="ig-embeds" data-ig-embed>{posts}</div>'
-                f'<div class="ig-nav"><button type="button" data-ig-dir="-1" aria-label="{t["lb_prev"]}">{PREV}</button>'
-                f'<button type="button" data-ig-dir="1" aria-label="{t["lb_next"]}">{NEXT}</button></div></div>')
-    else:
-        feed = f'<div class="ig-feed rv">{tiles}</div>'
-    ig_cls = "sec ig has-embeds" if INSTAGRAM_POSTS else "sec ig"
-    ig_sec = f'''<section class="{ig_cls}" id="instagram"><div class="wrap ig-grid">
+    UI = {"pt": ("Seguir", "Enviar mensagem", "Mensagem", "160 mil", "seguidores", ("PUBLICAÇÕES", "REELS", "MARCADOS")),
+          "en": ("Follow", "Message", "Message", "160K", "followers", ("POSTS", "REELS", "TAGGED")),
+          "es": ("Seguir", "Enviar mensaje", "Mensaje", "160 mil", "seguidores", ("PUBLICACIONES", "REELS", "ETIQUETADAS"))}[lang]
+    def th(al, n):
+        it = images[al][n]
+        return f'<img src="{P}{it["thumb"]}" width="{it["tw"]}" height="{it["th"]}" alt="" loading="lazy" decoding="async">'
+    grid9 = [("lazer-bambu", 0), ("bambu-410", 0), ("lazer-dna", 0), ("bambu-202", 1), ("reserva-dna", 0), ("lazer-bambu", 1),
+             ("bambu-202", 0), ("lazer-dna", 3), ("bambu-410", 5)]
+    hls = [("202", "bambu-202", 0), ("410", "bambu-410", 0), ("DNA", "reserva-dna", 0), ("Lazer" if lang != "en" else "Leisure", "lazer-bambu", 0)]
+    avatar = f'<span class="m-av"><span><img src="{P}img/brand/logo-bambu.svg" width="60" height="22" alt=""></span></span>'
+    bio = ('<b>Apartamentos Bambu e DNA Resort</b><br>Locação por temporada · Praia Grande - Ubatuba/SP<br>'
+           '<span class="m-link">airbnb.com/h/apto202bambu</span>')
+    hl_html = "".join(f'<span class="m-hl"><span class="m-hlc">{th(al, n)}</span>{lb}</span>' for lb, al, n in hls)
+    tabs = "".join(f'<span{" class=on" if i == 0 else ""}>{x}</span>' for i, x in enumerate(UI[5]))
+    lp_print = os.path.exists(os.path.join(SITE, "img", "instagram", "print-desktop.webp"))
+    ph_print = os.path.exists(os.path.join(SITE, "img", "instagram", "print-iphone.webp"))
+    lp_screen = (f'<img class="m-print" src="{P}img/instagram/print-desktop.webp" alt="Perfil @bambu.ubatuba no Instagram" loading="lazy">' if lp_print else
+        f'''<div class="lp-ig"><div class="lp-side"><i class="lg"></i><i></i><i></i><i></i><i></i><i></i></div><div class="lp-main">
+<div class="m-head">{avatar}<div><div class="m-row"><b>bambu.ubatuba</b><span class="m-btn">{UI[0]}</span><span class="m-btn g">{UI[1]}</span></div>
+<div class="m-stats"><b>{UI[3]}</b> {UI[4]}</div><div class="m-bio">{bio}</div></div></div>
+<div class="m-hls">{hl_html}</div><div class="m-tabs">{tabs}</div>
+<div class="m-grid">{"".join(th(al, n) for al, n in grid9[:6])}</div></div></div>''')
+    ph_screen = (f'<img class="m-print" src="{P}img/instagram/print-iphone.webp" alt="Perfil @bambu.ubatuba no Instagram" loading="lazy">' if ph_print else
+        f'''<div class="ph-ig"><div class="ph-status"><span>9:41</span><span class="ph-ico"><i></i><i></i><i></i></span></div>
+<div class="ph-top">bambu.ubatuba <small>✓</small></div>
+<div class="ph-prof">{avatar}<div class="ph-stat"><b>{UI[3]}</b>{UI[4]}</div></div>
+<div class="m-bio ph-bio">{bio}</div>
+<div class="ph-btns"><span class="m-btn">{UI[0]}</span><span class="m-btn g">{UI[2]}</span></div>
+<div class="m-hls ph-hls">{hl_html}</div><div class="m-tabs ph-tabs"><span class="on">▦</span><span>▷</span><span>◎</span></div>
+<div class="m-grid">{"".join(th(al, n) for al, n in grid9)}</div></div>''')
+    mock = (f'<a class="ig-mock rv" href="{INSTAGRAM}" target="_blank" rel="noopener" aria-label="{t["ig_tile"]}: @bambu.ubatuba">'
+            f'<span class="lp"><span class="lp-screen"><span class="lp-cam"></span><span class="lp-display">{lp_screen}</span></span><span class="lp-base"></span></span>'
+            f'<span class="ph"><span class="ph-display">{ph_screen}</span></span></a>')
+    ig_sec = f'''<section class="sec ig" id="instagram"><div class="wrap ig-grid">
 <div class="ig-side rv"><div class="sec-head" style="margin-bottom:28px"><span class="eyebrow">{t["ig_eyebrow"]}</span><h2>{t["ig_h2"]}</h2><p>{t["ig_p"]}</p></div>
 <div class="ig-card"><div class="ig-prof"><span class="ig-av"><span><img src="{P}img/brand/logo-bambu.svg" width="60" height="22" alt=""></span></span><div><b>@bambu.ubatuba</b><small>{t["ig_name"]}</small><small>Praia Grande · Ubatuba – SP</small></div></div>
 <a class="btn btn-ig" href="{INSTAGRAM}" target="_blank" rel="noopener"><img src="{ig_png}" width="18" height="18" alt="">{t["ig_follow"]}</a></div></div>
-{feed}
+{mock}
 </div></section>'''
 
     # --- Como reservar ---
