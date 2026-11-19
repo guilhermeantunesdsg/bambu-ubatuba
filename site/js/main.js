@@ -100,9 +100,9 @@
   var fine = window.matchMedia && matchMedia("(pointer: fine)").matches;
   var calm = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
   if (fine && !calm) {
-    var me = d.querySelector('script[src$="main.js"]');
+    var me = d.querySelector('script[src*="main.js"]');
     var s = d.createElement("script");
-    s.src = me ? me.src.replace(/main\.js$/, "lenis.min.js") : "js/lenis.min.js";
+    s.src = me ? me.src.replace(/main\.js(\?.*)?$/, "lenis.min.js") : "js/lenis.min.js";
     s.async = true;
     s.onload = function () {
       if (!window.Lenis) return;

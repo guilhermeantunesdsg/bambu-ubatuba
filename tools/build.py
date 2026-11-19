@@ -425,6 +425,9 @@ def alt_for(it, lang, title):
 
 # ------------------------------ Página ------------------------------
 def build(lang, images, css):
+    import hashlib
+    with open(os.path.join(SITE, "js", "main.js"), "rb") as fh:
+        JS_VER = hashlib.md5(fh.read()).hexdigest()[:8]
     t = T[lang]; P = PREFIX[lang]; L = LANGS.index(lang)
     url = SITE_URL + PATH[lang]
     ids = ["apartamentos", "lazer", "avaliacoes", "localizacao", "duvidas"]
@@ -697,7 +700,7 @@ def build(lang, images, css):
 <div class="lb-stage"><img alt=""><button class="lb-prev" aria-label="{t["lb_prev"]}">{PREV}</button><button class="lb-next" aria-label="{t["lb_next"]}">{NEXT}</button></div>
 <p class="lb-cap"></p></div>
 <script type="application/json" id="albums">{json.dumps(albums, ensure_ascii=False, separators=(",", ":"))}</script>
-<script src="{P}js/main.js" defer></script>'''
+<script src="{P}js/main.js?v={JS_VER}" defer></script>'''
 
     body = (f'<body>{header}<main id="main">{hero_html}{trust}{apts_sec}{lazer_sec}{rev_sec}{ig_sec}{book_sec}{loc_sec}{faq_sec}{final_sec}</main>{footer}</body></html>')
     return head + "\n" + body
