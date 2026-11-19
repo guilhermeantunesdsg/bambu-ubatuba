@@ -365,3 +365,26 @@ html.lenis,html.lenis body{height:auto}
 .lenis.lenis-stopped{overflow:hidden}
 
 .hdr:not(.solid) .logo-w{filter:drop-shadow(0 1px 10px rgba(2,18,28,.35))}
+
+/* ---------- Posts reais do Instagram (incorporação oficial, carrossel) ---------- */
+.has-embeds .ig-grid{grid-template-columns:1fr;gap:36px}
+.has-embeds .ig-side{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,420px);gap:24px 48px;align-items:end}
+.has-embeds .ig-side .sec-head{margin-bottom:0!important}
+.ig-wrap{min-width:0}
+.ig-embeds{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;align-items:flex-start;padding:2px 2px 8px}
+.ig-embeds::-webkit-scrollbar{display:none}
+.ig-embeds>*{flex:0 0 340px!important;scroll-snap-align:start}
+.ig-embeds .instagram-media,.ig-embeds iframe{min-width:0!important;max-width:100%!important;width:340px!important;margin:0!important;border-radius:16px!important;border:1px solid var(--line)!important;box-shadow:none!important}
+.ig-embeds blockquote.instagram-media{background:var(--sand);min-height:440px;display:grid;place-items:center;padding:20px;font-weight:600}
+.ig-embeds blockquote a{color:var(--ocean)}
+.ig-nav{display:flex;justify-content:flex-end;gap:8px;margin-top:14px}
+.ig-nav button{width:46px;height:46px;border-radius:50%;border:1px solid var(--line);background:#fff;color:var(--ink);display:grid;place-items:center;transition:background .2s,color .2s}
+.ig-nav button:hover{background:var(--ink);color:#fff}
+.ig-nav svg{width:20px;height:20px}
+@media (max-width:860px){
+  .has-embeds .ig-side{grid-template-columns:1fr}
+  .ig-embeds{margin-inline:-16px;padding:2px 16px 8px;scroll-padding-inline:16px}
+  .ig-embeds>*{flex-basis:min(86vw,340px)!important}
+  .ig-embeds .instagram-media,.ig-embeds iframe{width:min(86vw,340px)!important}
+  .ig-nav{display:none}
+}

@@ -112,6 +112,30 @@
     };
     d.head.appendChild(s);
   }
+  /* Posts do Instagram: carrega o script oficial só quando a seção se aproxima */
+  var ig = d.querySelector("[data-ig-embed]");
+  if (ig) {
+    var loadIg = function () {
+      if (window.instgrm) { window.instgrm.Embeds.process(); return; }
+      var sc = d.createElement("script");
+      sc.src = "https://www.instagram.com/embed.js"; sc.async = true;
+      sc.onload = function () { if (window.instgrm) window.instgrm.Embeds.process(); };
+      d.body.appendChild(sc);
+    };
+    if ("IntersectionObserver" in window) {
+      var igo = new IntersectionObserver(function (es) {
+        if (es[0].isIntersecting) { igo.disconnect(); loadIg(); }
+      }, { rootMargin: "800px 0px" });
+      igo.observe(ig);
+    } else loadIg();
+    d.querySelectorAll("[data-ig-dir]").forEach(function (b) {
+      b.addEventListener("click", function () {
+        var card = ig.firstElementChild, step = card ? card.getBoundingClientRect().width + 16 : 340;
+        ig.scrollBy({ left: +b.getAttribute("data-ig-dir") * step, behavior: calm ? "auto" : "smooth" });
+      });
+    });
+  }
+
   /* Links internos (#seção) com rolagem suave e compensando o header fixo */
   d.addEventListener("click", function (e) {
     var a = e.target.closest('a[href^="#"]');

@@ -44,6 +44,18 @@ APTS = [
 # {"name": "Mariana", "from": "São Paulo, SP", "date": "Out 2026", "apt": "Bambu 202",
 #  "text": {"pt": "Texto original...", "en": "English translation...", "es": "Traducción..."}},
 REVIEWS = []
+
+# Posts do Instagram em destaque (links públicos: no post, ⋯ → Copiar link).
+# Com a lista vazia, a seção mostra a grade de fotos do site.
+INSTAGRAM_POSTS = [
+    "https://www.instagram.com/p/Db_INsei5JR/",
+    "https://www.instagram.com/p/DMk88ebuniU/",
+    "https://www.instagram.com/p/DAbCdIdOlZP/",
+    "https://www.instagram.com/p/DfxmQ_hhPw-/",
+    "https://www.instagram.com/p/DfxFFxpBLLx/",
+    "https://www.instagram.com/p/DfucsCRiSxK/",
+    "https://www.instagram.com/p/DfsfpHRByjo/",
+]
 # ======================================================================
 
 LANGS = ["pt", "en", "es"]
@@ -611,11 +623,21 @@ def build(lang, images, css):
         f'<a class="ig-tile" href="{INSTAGRAM}" target="_blank" rel="noopener" aria-label="{t["ig_tile"]}">'
         + img_tag(images[al][n], P, alt_for(images[al][n], lang, titles[al]), "(max-width:860px) 33vw, 240px", cls="ph")
         + f'<span class="ig-ov"><img src="{ig_png}" width="34" height="34" alt=""></span></a>' for al, n in picks)
-    ig_sec = f'''<section class="sec ig" id="instagram"><div class="wrap ig-grid">
+    if INSTAGRAM_POSTS:
+        posts = "".join(
+            f'<blockquote class="instagram-media" data-instgrm-permalink="{u.split("?")[0]}?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14">'
+            f'<a href="{u.split("?")[0]}" target="_blank" rel="noopener">{t["ig_tile"]}</a></blockquote>' for u in INSTAGRAM_POSTS)
+        feed = (f'<div class="ig-wrap rv"><div class="ig-embeds" data-ig-embed>{posts}</div>'
+                f'<div class="ig-nav"><button type="button" data-ig-dir="-1" aria-label="{t["lb_prev"]}">{PREV}</button>'
+                f'<button type="button" data-ig-dir="1" aria-label="{t["lb_next"]}">{NEXT}</button></div></div>')
+    else:
+        feed = f'<div class="ig-feed rv">{tiles}</div>'
+    ig_cls = "sec ig has-embeds" if INSTAGRAM_POSTS else "sec ig"
+    ig_sec = f'''<section class="{ig_cls}" id="instagram"><div class="wrap ig-grid">
 <div class="ig-side rv"><div class="sec-head" style="margin-bottom:28px"><span class="eyebrow">{t["ig_eyebrow"]}</span><h2>{t["ig_h2"]}</h2><p>{t["ig_p"]}</p></div>
 <div class="ig-card"><div class="ig-prof"><span class="ig-av"><span><img src="{P}img/brand/logo-bambu.svg" width="60" height="22" alt=""></span></span><div><b>@bambu.ubatuba</b><small>{t["ig_name"]}</small><small>Praia Grande · Ubatuba – SP</small></div></div>
 <a class="btn btn-ig" href="{INSTAGRAM}" target="_blank" rel="noopener"><img src="{ig_png}" width="18" height="18" alt="">{t["ig_follow"]}</a></div></div>
-<div class="ig-feed rv">{tiles}</div>
+{feed}
 </div></section>'''
 
     # --- Como reservar ---
