@@ -17,7 +17,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SITE = os.path.join(ROOT, "site")
 
 # ============================ CONFIGURAÇÕES ============================
-SITE_URL = "https://www.bambuubatuba.com.br"   # <- troque pelo domínio definitivo (sem barra no final)
+SITE_URL = "https://ubatubabambu.com.br"   # domínio definitivo (sem barra no final)
 WHATSAPP = "5535988275400"
 INSTAGRAM = "https://www.instagram.com/bambu.ubatuba/"
 MAPS = {  # links "Compartilhar" do Google com a localização de cada prédio
